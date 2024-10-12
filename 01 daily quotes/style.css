@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+
+}
+
+body {
+    background: linear-gradient(#e66465, #9198e5);;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quote-box {
+    background: linear-gradient(0.125turn, #3f87a6, #ebf8e1, #f69d3c);;
+    width: 700px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    /* text-decoration: underline blue; */
+    position: relative;
+}
+
+.quote-box h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(230, 82, 82);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+    font-size: 26px;
+    min-height: 120px;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    display: block;
+    float: right;
+    margin: 10px 0 0 0;
+    position: relative;
+}
+
+.quote-box span::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: -35px;
+}
+
+.quote-box div {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .quote-box button {
+    background-color: rgb(23, 124, 229);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer
+} */
+
+.quote-box button {
+    background: linear-gradient(#949393, #9198e5);
+    border-radius: 25px;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.quote-box button:hover{
+    background: linear-gradient(#69bebe, #e5dd91);
+    color: rgb(0, 0, 53);
+}
